@@ -47,12 +47,12 @@ public class Facultad {
                         more = programa.hasReceiveMore();
 
                         // Broker it
-                        System.out.println(nomFacultad + " enviando mensaje a servidor: " + message);
                         server.send(message, more ? ZMQ.SNDMORE : 0);
                         if (!more) {
                             break;
                         }
                     }
+                    System.out.println(nomFacultad + " enviando mensaje a servidor: " + new String(message));
                 }
 
                 if (items.pollin(1)) {
@@ -61,13 +61,13 @@ public class Facultad {
                         message = server.recv(0);
                         more = server.hasReceiveMore();
 
-                        System.out.println(nomFacultad + " recibiendo mensaje del servidor: " + message);
                         // Broker it
                         programa.send(message, more ? ZMQ.SNDMORE : 0);
                         if (!more) {
                             break;
                         }
                     }
+                    System.out.println(nomFacultad + " recibiendo mensaje del servidor: " + new String(message));
                 }
             }
         }
