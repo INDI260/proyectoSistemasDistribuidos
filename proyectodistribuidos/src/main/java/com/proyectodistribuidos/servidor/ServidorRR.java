@@ -75,6 +75,7 @@ public class ServidorRR {
                             break;
                         }
                     }
+                    System.out.println("Facultad enviando mensaje a workers: " + new String(message));
                 }
 
                 if (items.pollin(1)) {
