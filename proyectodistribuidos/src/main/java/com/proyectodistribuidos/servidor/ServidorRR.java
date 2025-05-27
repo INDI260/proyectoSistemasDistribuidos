@@ -45,7 +45,7 @@ public class ServidorRR {
             workers.bind("inproc://workers");
         
             for (int thread_nbr = 0; thread_nbr < 10; thread_nbr++) {
-                Thread worker = new Worker(context, semestres);
+                Thread worker = new WorkerRR(context, semestres);
                 worker.setName("Worker-" + thread_nbr);
                 worker.start();
             }

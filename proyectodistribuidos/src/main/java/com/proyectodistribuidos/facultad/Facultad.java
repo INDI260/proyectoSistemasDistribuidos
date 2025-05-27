@@ -56,18 +56,20 @@ public class Facultad {
                 }
 
                 if (items.pollin(1)) {
+                    java.util.List<byte[]> frames = new java.util.ArrayList<>();
                     while (true) {
                         // receive message
                         message = server.recv(0);
+                        frames.add(message);
                         more = server.hasReceiveMore();
-
-                        // Broker it
-                        programa.send(message, more ? ZMQ.SNDMORE : 0);
                         if (!more) {
                             break;
                         }
                     }
-                    System.out.println(nomFacultad + " recibiendo mensaje del servidor: " + new String(message));
+                    for (int i = 0; i < frames.size(); i++) {
+                        programa.send(frames.get(i), (i < frames.size() - 1) ? ZMQ.SNDMORE : 0);
+                    }
+                    System.out.println(nomFacultad + " recibiendo mensaje del servidor: " + new String(frames.get(frames.size() - 1)));
                 }
             }
         }

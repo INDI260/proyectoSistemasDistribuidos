@@ -18,6 +18,7 @@ public class Programa {
             //  Socket to talk to server
             Socket requester = context.createSocket(SocketType.REQ);
             requester.connect("tcp://" + args[5]);
+            requester.setReceiveTimeOut(5000); // Timeout de 5 segundos
 
             System.out.println("Cliente conectado");
 
@@ -37,7 +38,11 @@ public class Programa {
             System.out.println("Mandando: " + mensajeFacultad);
             requester.send(mensajeFacultad);
             respuesta = requester.recvStr();
-            System.out.println(respuesta);
+            if (respuesta == null) {
+                System.out.println("No se recibió respuesta del servidor (timeout).");
+            } else {
+                System.out.println(respuesta);
+            }
         } catch (JsonProcessingException e) {
             System.err.println("Error al procesar JSON: " + e.getMessage());
         } catch (NumberFormatException e) {

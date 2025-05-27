@@ -9,12 +9,12 @@ import org.zeromq.ZMQ;
 import com.google.gson.Gson;
 import com.proyectodistribuidos.DTOs.Solicitud;
 
-public class Worker extends Thread {
+public class WorkerRR extends Thread {
     
         private ZContext context;
         private List<Semestre> semestres;
 
-        public Worker(ZContext context, List<Semestre> semestres)
+        public WorkerRR(ZContext context, List<Semestre> semestres)
         {
             this.context = context;
             this.semestres = semestres;
@@ -62,6 +62,7 @@ public class Worker extends Thread {
             }
 
             System.out.println("Solicitud procesada con éxito. Salones y laboratorios reservados.");
+            System.out.println("Enviando respuesta: " + reply);
             return reply;
         }
 
