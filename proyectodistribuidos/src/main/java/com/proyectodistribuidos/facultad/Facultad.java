@@ -34,6 +34,7 @@ public class Facultad {
 
             boolean more = false;
             byte[] message;
+            long startTime = 0;
 
             //  Switch messages between sockets
             while (!Thread.currentThread().isInterrupted()) {
@@ -52,7 +53,15 @@ public class Facultad {
                             break;
                         }
                     }
-                    System.out.println(nomFacultad + " enviando mensaje a servidor: " + new String(message));
+                    try (java.io.FileWriter writer = new java.io.FileWriter(nomFacultad + ".txt", true)) {
+                        writer.write(new String(message) + System.lineSeparator());
+                    } catch (java.io.IOException e) {
+                        System.err.println("Error escribiendo en el archivo: " + e.getMessage());
+                    }
+                    startTime = System.nanoTime();
+                    
+                    
+                }
                 }
 
                 if (items.pollin(1)) {
@@ -70,6 +79,12 @@ public class Facultad {
                         programa.send(frames.get(i), (i < frames.size() - 1) ? ZMQ.SNDMORE : 0);
                     }
                     System.out.println(nomFacultad + " recibiendo mensaje del servidor: " + new String(frames.get(frames.size() - 1)));
+                    long endTime = System.nanoTime();
+                    long responseTime = endTime - startTime;
+                    try (java.io.FileWriter csvWriter = new java.io.FileWriter(nomFacultad + ".csv", true)) {
+                        csvWriter.write(responseTime + System.lineSeparator());
+                    } catch (java.io.IOException e) {
+                        System.err.println("Error escribiendo en el archivo CSV: " + e.getMessage());
                 }
             }
         }
