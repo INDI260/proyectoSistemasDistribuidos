@@ -1,0 +1,5 @@
+com\proyectodistribuidos\cliente\cienciasNaturales.class
+com\proyectodistribuidos\Main.class
+com\proyectodistribuidos\cliente\Cliente.class
+com\proyectodistribuidos\DTOs\Solicitud.class
+com\proyectodistribuidos\servidor\Servidor.class
