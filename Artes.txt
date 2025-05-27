@@ -1,0 +1,26 @@
+Artes recibiendo mensaje del servidor: Se asignaron: 10 salonesSe asignaron: 10 salones y 0 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 0 salonesSe asignaron: 0 salones y 4 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 8 salonesSe asignaron: 8 salones y 0 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 0 salonesSe asignaron: 0 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 8 salonesSe asignaron: 8 salones y 0 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 0 salonesSe asignaron: 0 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 0 salonesSe asignaron: 0 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 8 salonesSe asignaron: 8 salones y 0 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 8 salonesSe asignaron: 8 salones y 0 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 0 salonesSe asignaron: 0 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 8 salonesSe asignaron: 8 salones y 0 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 0 salonesSe asignaron: 0 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Error: No hay suficientes salones disponibles. Se asignaron 0 salones.
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Error: No hay suficientes laboratorios disponibles. Se asignaron 0 laboratorios y 0 aulas móviles.
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Artes recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios

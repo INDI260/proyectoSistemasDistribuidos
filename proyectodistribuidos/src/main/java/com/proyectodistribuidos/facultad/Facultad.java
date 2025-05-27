@@ -12,15 +12,15 @@ public class Facultad {
     private static String nomFacultad;
     private static int semestre;
     public static void main(String[] args) {
-        if (args.length != 3) {
-            System.out.println("Uso: java Cliente <semestre> <nomFacultad> <ip:puertoServidor>");
+        if (args.length != 4) {
+            System.out.println("Uso: java Cliente <semestre> <nomFacultad> <ip:puertoServidor> <puertoFacultad>");
             return;
         }
         //  Prepare our context and sockets
         try (ZContext context = new ZContext()) {
             Socket programa = context.createSocket(SocketType.ROUTER);
             Socket server = context.createSocket(SocketType.DEALER);
-            programa.bind("tcp://*:5559");
+            programa.bind("tcp://*:" + args[3]); // Bind to the specified port for the faculty
             server.connect("tcp://" + args[2]);
             nomFacultad = args[1];
             semestre = Integer.parseInt(args[0]);
@@ -34,7 +34,6 @@ public class Facultad {
 
             boolean more = false;
             byte[] message;
-            long startTime = 0;
 
             //  Switch messages between sockets
             while (!Thread.currentThread().isInterrupted()) {
@@ -53,15 +52,7 @@ public class Facultad {
                             break;
                         }
                     }
-                    try (java.io.FileWriter writer = new java.io.FileWriter(nomFacultad + ".txt", true)) {
-                        writer.write(new String(message) + System.lineSeparator());
-                    } catch (java.io.IOException e) {
-                        System.err.println("Error escribiendo en el archivo: " + e.getMessage());
-                    }
-                    startTime = System.nanoTime();
-                    
-                    
-                }
+                    System.out.println(nomFacultad + " enviando mensaje a servidor: " + new String(message));
                 }
 
                 if (items.pollin(1)) {
@@ -78,13 +69,13 @@ public class Facultad {
                     for (int i = 0; i < frames.size(); i++) {
                         programa.send(frames.get(i), (i < frames.size() - 1) ? ZMQ.SNDMORE : 0);
                     }
-                    System.out.println(nomFacultad + " recibiendo mensaje del servidor: " + new String(frames.get(frames.size() - 1)));
-                    long endTime = System.nanoTime();
-                    long responseTime = endTime - startTime;
-                    try (java.io.FileWriter csvWriter = new java.io.FileWriter(nomFacultad + ".csv", true)) {
-                        csvWriter.write(responseTime + System.lineSeparator());
+                    String respuesta = (nomFacultad + " recibiendo mensaje del servidor: " + new String(frames.get(frames.size() - 1)));
+                    System.out.println(respuesta);
+                    try (java.io.FileWriter writer = new java.io.FileWriter(nomFacultad + ".txt", true)) {
+                        writer.write(respuesta + System.lineSeparator());
                     } catch (java.io.IOException e) {
-                        System.err.println("Error escribiendo en el archivo CSV: " + e.getMessage());
+                        System.err.println("Error al escribir en el archivo: " + e.getMessage());
+                    }
                 }
             }
         }

@@ -1,0 +1,18 @@
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 0 salonesSe asignaron: 0 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Error: No hay suficientes laboratorios disponibles. Se asignaron 0 laboratorios y 0 aulas móviles.
+Derecho recibiendo mensaje del servidor: Se asignaron: 0 salonesSe asignaron: 0 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Error: No hay suficientes laboratorios disponibles. Se asignaron 0 laboratorios y 0 aulas móviles.
+Derecho recibiendo mensaje del servidor: Se asignaron: 0 salonesSe asignaron: 0 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
+Derecho recibiendo mensaje del servidor: Se asignaron: 5 salonesSe asignaron: 5 salones y 2 laboratorios
